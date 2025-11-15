@@ -1,0 +1,39 @@
+/* asterrisk */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  background: linear-gradient(90deg, #a18cd1, #fbc2eb, #d3cce3, #e0c3fc, #8e2de2);    text-align: center;
+}
+.container{
+    height: 70vh;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff6b6b, #d35400, #8e44ad);    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+      background: linear-gradient(90deg, #141e30, #243b55, #2c3e50, #34495e, #4b79a1);
+    border: 2px solid rgb(62, 62, 143);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+}
+.btn{
+    height: 18vmin;
+    width: 18vmin;
+    color:yellowgreen;
+ background: linear-gradient(270deg, #141e30, #243b55, #2c3e50, #34495e, #4b79a1);
+}
+.reset{
+    font-weight:bolder ;
+    height: 6vmin;
+    width: 12vmin;
+    background-color: rgb(162, 255, 0);
+    color: rgb(0, 13, 255);
+}

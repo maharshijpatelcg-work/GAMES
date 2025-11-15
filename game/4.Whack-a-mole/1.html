@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-Mole Game</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔨 Whack-a-Mole 🔨</h1>
+        
+        <div class="scoreboard">
+            <div class="score-box">
+                <h3>Score</h3>
+                <div id="score">0</div>
+            </div>
+            <div class="score-box">
+                <h3>Time</h3>
+                <div id="timeLeft">30</div>
+            </div>
+            <div class="score-box">
+                <h3>Best</h3>
+                <div id="maxScore">0</div>
+            </div>
+        </div>
+
+        <button id="startBtn" class="start-btn">Start Game</button>
+        <button id="resetBtn" class="start-btn" style="background:#ff7b7b;">Reset Game</button>
+        <button id="pauseBtn" class="start-btn" style="background:#f7b731;">Pause Game</button>
+<button id="resumeBtn" class="start-btn" style="background:#20bf6b;">Resume Game</button>
+
+        <div class="game-board">
+            <div class="hole"><div class="mole"></div></div>
+            <div class="hole"><div class="mole"></div></div>
+            <div class="hole"><div class="mole"></div></div>
+            <div class="hole"><div class="mole"></div></div>
+            <div class="hole"><div class="mole"></div></div>
+            <div class="hole"><div class="mole"></div></div>
+        </div>
+    </div>
+
+    <video id="bg-video" autoplay muted loop class="hidden">
+        <source src="./winning.mp4">
+    </video>
+
+    <script src="1.js"></script>
+</body>
+</html>

@@ -56,19 +56,29 @@ h1 {
     font-weight: bold;
 }
 
-.start-btn {
-    display: block;
-    width: 100%;
+/* 🎯 BUTTONS */
+.button-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.start-btn,
+.restart-btn {
+    flex: 1;
     padding: 15px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
-    background: #4ECDC4;
-    color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin-bottom: 20px;
     transition: all 0.3s;
+}
+
+/* Start Button */
+.start-btn {
+    background: #4ECDC4;
+    color: white;
 }
 
 .start-btn:hover {
@@ -81,6 +91,18 @@ h1 {
     cursor: not-allowed;
 }
 
+/* Restart Button */
+.restart-btn {
+    background: #ff6b6b;
+    color: white;
+}
+
+.restart-btn:hover {
+    background: #e85a5a;
+    transform: translateY(-2px);
+}
+
+/* 🎮 GAME BOARD */
 .game-board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -126,16 +148,22 @@ h1 {
     bottom: -100%;
 }
 
-@media (max-width: 600px) {
-    .game-board {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .hole {
-        height: 120px;
-    }
+/* Message */
+#message {
+    transition: opacity 0.2s ease;
+    font-size: 32px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    opacity: 0;
 }
 
+/* Glow */
+#maxScore {
+    transition: text-shadow 0.2s ease;
+}
+
+/* Background Video */
 #bg-video {
   position: fixed;
   top: 0;
@@ -155,4 +183,15 @@ h1 {
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .game-board {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hole {
+        height: 120px;
+    }
 }
